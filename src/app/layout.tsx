@@ -2,6 +2,7 @@ import * as React from 'react';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import '@mui/material-pigment-css/styles.css';
+import Layout from './_layout';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -22,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.variable}>{children}</body>
+      <body className={roboto.variable}>
+        <Layout>
+          {children}
+        </Layout>
+      </body>
     </html>
   );
 }

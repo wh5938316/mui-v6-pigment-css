@@ -12,13 +12,16 @@ export default withPigment(nextConfig, {
       fontFamily: 'var(--font-roboto)',
     },
     components: {
-      MuiButton: {
+      MuiList: {
         styleOverrides: {
           root: {
-            background: '#000 !important',
+            padding: '8px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 0,
           },
         },
-      }
+      },
     }
   }),
   transformLibraries: ['@mui/material'],
