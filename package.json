@@ -1,19 +1,26 @@
 {
   "name": "mui-v6-pigment-css",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "pnpm --filter=app dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mui/material": "^6.1.10",
+    "@mui/material-nextjs": "^6.1.9",
+    "@mui/material-pigment-css": "^6.1.10",
+    "next": "15.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "turbo": "^2.3.0",
-    "typescript": "5.5.4"
-  },
-  "packageManager": "pnpm@9.0.0",
-  "engines": {
-    "node": ">=18"
+    "@pigment-css/nextjs-plugin": "^0.0.28",
+    "@types/node": "^20.14.5",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "typescript": "^5.5.4"
   }
 }

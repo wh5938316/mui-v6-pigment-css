@@ -1,16 +1,12 @@
 import { withPigment } from '@pigment-css/nextjs-plugin';
-import { createTheme, svgIconClasses } from '@mui/material';
-// import { getTheme } from '@repo/theme';
-// import svgIconClasses from '@mui/material/SvgIcon/svgIconClasses';
+import { createTheme } from '@mui/material';
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  transpilePackages: ['@repo/icons']
-};
+const nextConfig = {};
+
 export default withPigment(nextConfig, {
   theme: createTheme({
     cssVariables: true,
-    // ...getTheme('light'),
     components: {
       MuiSvgIcon: {
         styleOverrides: {
